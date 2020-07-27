@@ -1,0 +1,191 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  -webkit-box-shadow: none;
+  background-color: #A8CEC3;
+}
+
+
+
+
+
+
+
+
+
+.box {
+  width: 100%;
+  min-width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-black {
+  color: black;
+}
+
+.c-blue {
+  color: #0099ff;
+}
+
+.c-9 {
+  color: #999;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+}
+
+.blue {
+  background: #0099ff;
+}
+
+.bg-f0 {
+  background: #f0f0f0;
+}
+
+
+
+.b-f0 {
+  border: 1px solid #f0f0f0;
+  ;
+}
+
+.b-b-f0 {
+  border-bottom: 1px solid #f0f0f0;
+  ;
+}
+
+
+
+
+
+
+
+.el-button--success {
+  color: #FFF;
+  background-color: #0D906E;
+  border-color: #0D906E;
+}
+
+.el-button--success.is-active,
+.el-button--success:active {
+  background: #0D906E;
+  border-color: #0D906E;
+  color: #FFF;
+}
+
+.el-button--success:focus,
+.el-button--success:hover {
+  background: #0D906E;
+  border-color: #0D906E;
+  color: #FFF;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #E5F6F7;
+  color: #74A496;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: #74A496;
+}
+
+
+
+
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+
+
+
+.orderTable table thead tr th {
+  background-color: #74A496 !important;
+  color: #fff;
+  font-weight: 500;
+}
+
+.el-image-viewer__wrapper{
+  top: 95px;
+  left: 110px;
+}
+.el-image-viewer__close{
+  color:#fff;
+}
+.info_btn {
+  height: 36px;
+  line-height: 36px;
+  border:1px solid #d7dfdd;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 0px 10px;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-radio__input.is-checked .el-radio__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner, .el-checkbox-button.is-checked .el-checkbox-button__inner{
+  background-color: #0D906E;
+	border-color: #0D906E;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner, .el-checkbox__inner:hover{
+  border-color: #0D906E;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label, .el-checkbox-button__inner:hover{
+  color: #0D906E;
+}
+.el-radio__input.is-checked+.el-radio__label{
+  color: #0D906E;
+}
+.el-checkbox-button.el-checkbox-button.is-checked:first-child .el-checkbox-button__inner{
+  border-left-color:#0D906E;
+}
+.el-checkbox-button.is-focus .el-checkbox-button__inner{
+  border-color: #0D906E;
+}
+@media print {   
+            .el-pagination{
+                display: none;    
+            }    
+        }    
