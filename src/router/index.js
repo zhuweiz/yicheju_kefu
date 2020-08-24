@@ -6,6 +6,7 @@ Vue.use(Router)
 //首页管理
 import home from '@/page/home/home'
 import page from '@/page/home/page'
+import enquiry from '@/page/home/enquiry'
 import business from '@/page/home/business'
 import parts from '@/page/home/parts'
 import chain from '@/page/home/chain'
@@ -58,6 +59,15 @@ export default new Router({
 					component: business,
 					meta: {
 						title: '修理厂审核',
+						index: 0
+					}
+				},
+				{
+					path: '/home/enquiry',
+					name: 'enquiry',
+					component: enquiry,
+					meta: {
+						title: '询价单管理',
 						index: 0
 					}
 				},

@@ -24,6 +24,11 @@
 						link: "/"
 					},
 					{
+						name: "询价单管理",
+						icon: "icon-2wodezhangdan18x20",
+						link: "/home/enquiry"
+					},
+					{
 						name: "修理厂审核",
 						icon: "icon-2wodezhangdan18x20",
 						link: "/home/business"
@@ -60,19 +65,21 @@
 		mounted() {
 			if(this.$route.path == "/") {
 				this.orderNavActive = 0
-			} else if(this.$route.path == "/home/business") {
+			}else if(this.$route.path == "/home/enquiry") {
 				this.orderNavActive = 1
-			} else if(this.$route.path == "/home/parts") {
+			}  else if(this.$route.path == "/home/business") {
 				this.orderNavActive = 2
-			} else if(this.$route.path == "/home/chain") {
+			} else if(this.$route.path == "/home/parts") {
 				this.orderNavActive = 3
-			} else if(this.$route.path == "/home/extension") {
+			} else if(this.$route.path == "/home/chain") {
 				this.orderNavActive = 4
-			} else if(this.$route.path == "/home/shop") {
+			} else if(this.$route.path == "/home/extension") {
 				this.orderNavActive = 5
+			} else if(this.$route.path == "/home/shop") {
+				this.orderNavActive = 6
 			}else if (this.$route.path == "/home/service_chat") {
 				// 111
-				this.orderNavActive = 6
+				this.orderNavActive = 7
 			}
 			
 			this.rechat()

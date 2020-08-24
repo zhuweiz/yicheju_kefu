@@ -3,32 +3,15 @@
   -webkit-box-sizing: border-box
 }
 
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-p,
-blockquote,
-th,
-td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
   margin: 0;
   padding: 0
 }
-*{box-sizing: border-box;}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 14px;
   color: #666;
@@ -37,22 +20,15 @@ body {
   line-height: 24px
 }
 
-fieldset,
-img {
+fieldset, img {
   border: 0
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: 100%
 }
 
@@ -60,10 +36,7 @@ em {
   font-style: normal
 }
 
-input,
-button,
-select,
-textarea {
+input, button, select, textarea {
   outline: none
 }
 
@@ -579,8 +552,8 @@ a:hover {
   margin-right: 30px
 }
 
-.m-r-50{
-	margin-right: 50px
+.m-r-50 {
+  margin-right: 50px
 }
 
 .m-lr-0 {
@@ -838,7 +811,9 @@ a:hover {
   opacity: 1
 }
 
-.c-p{cursor: pointer;}
+.c-p {
+  cursor: pointer;
+}
 
 :-moz-placeholder {
   color: #dedede
@@ -855,9 +830,6 @@ a:hover {
 ::-webkit-input-placeholder {
   color: #dedede
 }
-
-
-
 
 .flex {
   display: -ms-flexbox !important;
@@ -1145,4 +1117,14 @@ a:hover {
 
 .flex-none {
   flex: none !important
+}
+
+.el-dialog {
+  overflow: hidden !important;
+}
+.c_dad .el-dialog__body{
+  padding: 0 10px;
+}
+.pilian .el-textarea__inner {
+  height: 95px !important;
 }

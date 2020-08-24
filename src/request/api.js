@@ -209,10 +209,38 @@ const clearUnread = function(parmas) {
 const upload = function(parmas) {
 	return postChat("/index/index/upload", parmas)
 }
-
-
-
+//询价订单管理
+const getorder = function (parmas) {
+  return get("/vehicle/garageAskPrice/manage/askPrice/order", parmas)
+}
+//从队列中获取手工询价单
+const handAskInfo = function (parmas) {
+  return get("/vehicle/garageAskPrice/handAskInfo", parmas)
+}
+//修改配件订单
+const AskQueue = function(parmas) {
+	return posts(`/vehicle/garageAskPrice/change/AskQueue/${parmas.oid}`, parmas)
+}
+//手工询价单配件添加
+const saveHandAskPart = function(parmas) {
+	return posts("/vehicle/supplier/askPrice/saveHandAskPart", parmas)
+}
+//查询配件商报价列表
+const pcaskPriceList = function(parmas) {
+	return get("/vehicle/garageAskPrice/pcaskPriceList", parmas)
+}
+//查询配件商报价列表
+const askPriceList = function(parmas) {
+	return get("/vehicle/garageAskPrice/askPriceList", parmas)
+}
+//查询未报价配件商列表
+const unAskPriceList = function(parmas) {
+	return get("/vehicle/garageAskPrice/unAskPriceList", parmas)
+}
 export {
+  unAskPriceList,
+  askPriceList,
+  pcaskPriceList,
   getWxc,
   tabUser,
   login,
@@ -253,5 +281,9 @@ export {
 	getUserInfo,
 	startToSingleTalk,
 	clearUnread,
-	upload
+  upload,
+  getorder,
+  handAskInfo,
+  AskQueue,
+  saveHandAskPart
 }
