@@ -237,9 +237,73 @@ const askPriceList = function(parmas) {
 const unAskPriceList = function(parmas) {
 	return get("/vehicle/garageAskPrice/unAskPriceList", parmas)
 }
+//获取活动底图模板
+const template = function(parmas) {
+	return get("/vehicle/market/template", parmas)
+}
+//保存修改活动底图
+const dituupdate = function(parmas) {
+	return posts("/vehicle/market/update", parmas)
+}
+//新增配件品牌
+const partBrand = function(parmas) {
+	return post("/vehicle/part/add/partBrand", parmas)
+}
+//新增配件分类
+const partClassify = function(parmas) {
+	return post("/vehicle/part/add/partClassify", parmas)
+}
+//查询配件品牌
+const brandList = function(parmas) {
+	return get("/vehicle/part/get/brandList", parmas)
+}
+//查询配件分类
+const classifyList = function(parmas) {
+	return get("/vehicle/part/get/classifyList", parmas)
+}
+//删除配件品牌
+const shanchuupartBrand = function (parmas) {
+  return deletes(`/vehicle/part/delete/partBrand/${parmas.id}`)
+}
+//删除配件品牌
+const shanchupartClassify= function (parmas) {
+  return deletes(`/vehicle/part/delete/partClassify/${parmas.id}`)
+}
+//pc订单列表
+const dingdanlist = function(parmas) {
+	return get("/vehicle/diy/mall/order/page", parmas)
+}
+
+const queryGarageInfo = function(parmas) {
+	return get("/vehicle/garage/queryGarageInfo", parmas)
+}
+const gyinsnew = function(parmas) {
+	return get("/vehicle/system/supplier/list/new", parmas)
+}
+//配件清单
+const qindanlist = function(parmas) {
+	return get("/vehicle/diy/mall/order/part/list", parmas)
+}
+//pc订单列表(供应商模式)
+const gyinslist = function(parmas) {
+	return get("/vehicle/diy/mall/order/pages", parmas)
+}
 export {
   unAskPriceList,
   askPriceList,
+  dingdanlist,
+  gyinsnew,
+  dituupdate,
+  qindanlist,
+  partBrand,
+  brandList,
+  classifyList,
+  gyinslist,
+  partClassify,
+  shanchupartClassify,
+  queryGarageInfo,
+  shanchuupartBrand,
+  template,
   pcaskPriceList,
   getWxc,
   tabUser,

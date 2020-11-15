@@ -37,6 +37,10 @@
 						name: "配件商审核",
 						icon: "icon-2wodezhangdan18x20",
 						link: "/home/parts"
+					},{
+						name: "在线订单",
+						icon: "icon-2wodezhangdan18x20",
+						link: "/home/order_online"
 					},
 					{
 						name: "连锁门店",
@@ -57,6 +61,11 @@
 						name: "客服",
 						icon: "icon-shouye1",
 						link: "/home/service_chat"
+					},
+					{
+						name: "设置",
+						icon: "icon-shouye1",
+						link: "/home/setting"
 					}
 				],
 				k2_msgcount: 0
@@ -71,15 +80,20 @@
 				this.orderNavActive = 2
 			} else if(this.$route.path == "/home/parts") {
 				this.orderNavActive = 3
-			} else if(this.$route.path == "/home/chain") {
+			} else if(this.$route.path == "/home/order_online") {
 				this.orderNavActive = 4
-			} else if(this.$route.path == "/home/extension") {
+			} else if(this.$route.path == "/home/chain") {
 				this.orderNavActive = 5
-			} else if(this.$route.path == "/home/shop") {
+			} else if(this.$route.path == "/home/extension") {
 				this.orderNavActive = 6
+			} else if(this.$route.path == "/home/shop") {
+				this.orderNavActive = 7
 			}else if (this.$route.path == "/home/service_chat") {
 				// 111
-				this.orderNavActive = 7
+				this.orderNavActive = 8
+			}else if (this.$route.path == "/home/setting") {
+				// 111
+				this.orderNavActive = 9
 			}
 			
 			this.rechat()
@@ -95,7 +109,7 @@
 				if (to.path == "/home/service_chat") {
 					localStorage.removeItem("k2_msgcount")
 					this.k2_msgcount = 0
-					this.orderNavActive = 6
+					this.orderNavActive = 8
 				}
 				// 111
 				

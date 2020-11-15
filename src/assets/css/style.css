@@ -184,8 +184,19 @@ body,
 .el-checkbox-button.is-focus .el-checkbox-button__inner{
   border-color: #0D906E;
 }
+.fafangss .el-dialog--center .el-dialog__body{
+  padding: 5px 25px 30px
+  }
 @media print {   
             .el-pagination{
                 display: none;    
             }    
         }    
+
+        .avatar-uploader .el-upload {
+          border: 1px dashed #d9d9d9;
+          border-radius: 6px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+        }
