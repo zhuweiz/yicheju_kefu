@@ -288,16 +288,27 @@ const qindanlist = function(parmas) {
 const gyinslist = function(parmas) {
 	return get("/vehicle/diy/mall/order/pages", parmas)
 }
+//查询配件品牌详情
+const brandDetails = function(parmas) {
+	return get("/vehicle/part/get/brandDetails", parmas)
+}
+//新增配件品牌详情
+const partBrandDetails = function(parmas) {
+	return posts("/vehicle/part/add/partBrandDetails", parmas)
+}
+
 export {
   unAskPriceList,
   askPriceList,
   dingdanlist,
+  brandDetails,
   gyinsnew,
   dituupdate,
   qindanlist,
   partBrand,
   brandList,
   classifyList,
+  partBrandDetails,
   gyinslist,
   partClassify,
   shanchupartClassify,

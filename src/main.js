@@ -26,7 +26,16 @@ import './assets/css/style.css'
 // 组件title
 import VueWechatTitle from 'vue-wechat-title'
 Vue.use(VueWechatTitle)
+//富文本编辑
+import VueQuillEditor from 'vue-quill-editor'
 
+import 'quill/dist/quill.core.css'
+
+import 'quill/dist/quill.snow.css'
+
+import 'quill/dist/quill.bubble.css'
+
+Vue.use(VueQuillEditor)
 
 // 全局数据仓库
 import store from './store/index'
