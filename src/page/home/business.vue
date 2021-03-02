@@ -170,6 +170,12 @@
         <el-form-item label="门店经度" prop="amount">
           <el-input v-model="editPartsForm.positionJd" placeholder="请输入" style="width: 300px"></el-input>
         </el-form-item>
+           <el-form-item label="提现费率" prop="inCashRate">
+          <el-input v-model="editPartsForm.inCashRate" placeholder="请输入" style="width: 300px"></el-input>
+        </el-form-item>
+           <el-form-item label="集客单价" prop="gcprice">
+          <el-input v-model="editPartsForm.gcprice" placeholder="请输入" style="width: 300px"></el-input>
+        </el-form-item>
         <el-form-item label label-width="120px">
           <div class="yinye">营业执照</div>
           <el-upload
